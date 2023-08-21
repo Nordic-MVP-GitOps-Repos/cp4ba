@@ -16,7 +16,6 @@ spec:
     sc_deployment_type: Starter
     sc_optional_components: >-
       bai
-      baml
     no_log: false
     sc_drivers_url: null
     image_pull_secrets:
