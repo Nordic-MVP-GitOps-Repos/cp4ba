@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
   #- baw-and-bai.yaml
-  - bai-baml-standalone.yaml
+  #- bai-baml-standalone.yaml
