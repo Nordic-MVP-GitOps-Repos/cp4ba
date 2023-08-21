@@ -1,0 +1,38 @@
+apiVersion: icp4a.ibm.com/v1
+kind: ICP4ACluster
+metadata:
+  name: icp4adeploy
+  namespace: bai-stdalone
+spec:
+  bai_configuration:
+    business_performance_center:
+      all_users_access: true
+    image_credentials:
+      registry: cp.icr.io/cp/cp4a
+  ibm_license: accept
+  appVersion: 23.0.1
+  shared_configuration:
+    sc_cpe_limited_storage: false
+    sc_deployment_type: Starter
+    sc_optional_components: >-
+      bai
+      baml
+    no_log: false
+    sc_drivers_url: null
+    image_pull_secrets:
+      - ibm-entitlement-key
+    sc_deployment_patterns:
+    storage_configuration:
+      sc_block_storage_classname: ocs-storagecluster-ceph-rbd
+      sc_dynamic_storage_classname: ocs-storagecluster-cephfs
+      sc_fast_file_storage_classname: ocs-storagecluster-cephfs
+      sc_medium_file_storage_classname: ocs-storagecluster-cephfs
+      sc_slow_file_storage_classname: ocs-storagecluster-cephfs
+    debug: false
+    root_ca_secret: 'icp4adeploy-root-ca'
+    sc_run_as_user: null
+    sc_deployment_license: non-production
+     sc_ingress_enable: false
+    sc_image_repository: cp.icr.io
+    sc_deployment_platform: OCP
+    sc_deployment_fncm_license: non-production
