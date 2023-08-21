@@ -2,7 +2,7 @@ apiVersion: icp4a.ibm.com/v1
 kind: ICP4ACluster
 metadata:
   name: icp4adeploy
-  namespace: bai-stdalone
+  namespace: cp4ba-starter
 spec:
   bai_configuration:
     business_performance_center:
