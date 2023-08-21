@@ -5,7 +5,8 @@ metadata:
   namespace: cp4ba-starter
 spec:
   bai_configuration:
-    flink.additional_task_managers: 1
+    flink:
+      additional_task_managers: 1
     business_performance_center:
       all_users_access: true
   ibm_license: accept
