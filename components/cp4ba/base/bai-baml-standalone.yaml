@@ -7,8 +7,6 @@ spec:
   bai_configuration:
     business_performance_center:
       all_users_access: true
-    image_credentials:
-      registry: cp.icr.io/cp/cp4a
   ibm_license: accept
   appVersion: 23.0.1
   shared_configuration:
