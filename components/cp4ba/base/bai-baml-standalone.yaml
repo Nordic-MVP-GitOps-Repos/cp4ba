@@ -12,14 +12,14 @@ spec:
   ibm_license: accept
   appVersion: 23.0.1
   shared_configuration:
-    sc_cpe_limited_storage: false
-    sc_deployment_type: Starter
+    sc_deployment_type: starter
+    sc_deployment_patterns: foundation
     sc_optional_components: bai
+    sc_deployment_license: non-production
+    sc_deployment_platform: OCP
     no_log: false
-    sc_drivers_url: null
     image_pull_secrets:
       - ibm-entitlement-key
-    sc_deployment_patterns:
     storage_configuration:
       sc_block_storage_classname: ocs-storagecluster-ceph-rbd
       sc_dynamic_storage_classname: ocs-storagecluster-cephfs
@@ -27,10 +27,3 @@ spec:
       sc_medium_file_storage_classname: ocs-storagecluster-cephfs
       sc_slow_file_storage_classname: ocs-storagecluster-cephfs
     debug: false
-    root_ca_secret: 'icp4adeploy-root-ca'
-    sc_run_as_user: null
-    sc_deployment_license: non-production
-    sc_ingress_enable: false
-    sc_image_repository: cp.icr.io
-    sc_deployment_platform: OCP
-    sc_deployment_fncm_license: non-production
