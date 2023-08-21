@@ -14,8 +14,7 @@ spec:
   shared_configuration:
     sc_cpe_limited_storage: false
     sc_deployment_type: Starter
-    sc_optional_components: >-
-      bai
+    sc_optional_components: bai
     no_log: false
     sc_drivers_url: null
     image_pull_secrets:
