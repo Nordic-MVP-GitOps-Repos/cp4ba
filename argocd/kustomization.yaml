@@ -11,3 +11,16 @@ resources:
   - kibana.yaml
   - operator.yaml
   - operand.yaml
+
+patches:
+- target:
+    group: argoproj.io
+    kind: Application
+    labelSelector: group=applications
+  patch: |-
+    - op: add
+      path: /spec/source/repoURL
+      value: https://github.com/Nordic-MVP-GitOps-Repos/cp4ba.git
+    - op: add
+      path: /spec/source/targetRevision
+      value: bai-standalone
