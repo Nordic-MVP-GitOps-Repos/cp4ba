@@ -13,7 +13,6 @@ spec:
   appVersion: 23.0.1
   shared_configuration:
     sc_deployment_type: starter
-    #sc_deployment_patterns: foundation
     sc_optional_components: bai
     sc_deployment_license: non-production
     sc_deployment_platform: OCP
