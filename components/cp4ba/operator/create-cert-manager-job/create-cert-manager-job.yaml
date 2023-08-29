@@ -16,7 +16,7 @@ spec:
             - -c
             - >-
               cd /work &&
-              git clone -v -b scripts https://github.com/IBM/ibm-common-service-operator.git
+              git clone -v -b scripts https://github.com/IBM/ibm-common-service-operator.git --cert-manager-namespace cp4ba-starter
           volumeMounts:
             - mountPath: /work
               name: workarea  
